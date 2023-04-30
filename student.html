@@ -5,214 +5,201 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
-  </head> <link rel="stylesheet" href="./styles/student.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <link rel="stylesheet" href="./styles/student.css" />
   <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="stylesheet" href="./styles/slider.css" />
+
   <link rel="stylesheet" href="./styles/courseDescription.css" />
-  <style>
-       #container{
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            z-index: 1;
-            }
-  </style>
+  <style></style>
   <body>
     <!-- adding navbar -->
     <div id="container">
       <div id="navbar">
+        <div id="logo">
+          <a href="index.html"
+            ><img
+              id="mainlogo"
+              src="https://images.ctfassets.net/00atxywtfxvd/2MlqAOzmHjSPtssv6HlNox/1cb35b40775835a5f574ebc5509907a1/coursera-wordmark-blue.svg"
+          /></a>
+        </div>
+        <div id="explore">
+          <span id="extext1">Explore </span>
+          <span class="material-icons" id="arrow"> expand_more </span>
+        </div>
+        <div id="searchBox">
+          <input
+            id="searchinput"
+            placeholder="What do you want to learn?"
+            type="text"
+            oninput="fillPreviousSearched()"
+          />
+          <button class="material-icons" id="searchicon">search</button>
+        </div>
+
+        <div id="enterPrises">
+          <a href="Enterprises.html">Enterprises</a>
+        </div>
+        <div id="forStu">
+          <a href="student.html">For Students</a>
+        </div>
+        <div id="bellsign">
+          <img src="./images/bell.png" alt="" />
+        </div>
+        <div id="verticalline"></div>
+        <div id="hiddenfig"><img src="./images/dummy.png" alt="" /></div>
+        <div id="login"><a href="signin.html">Log In</a></div>
+        <div id="jff">
+          <a href="signup.html" style="color: white">Join for Free</a>
+        </div>
+
+        <!-- navbar end -->
+      </div>
+      <!-- hover menu start -->
+      <div id="blockremover"></div>
+      <div id="hovermenuandinfodiv">
+        <div id="hovermenu">
+          <div>Goals</div>
+          <div id="tAfC">Take a free course</div>
+          <div id="eAd">
+            Earn a Degree
+
+            <span class="material-icons arrows"> arrow_forward_ios </span>
+          </div>
+          <div id="eAc">
+            Earn a Certificate
+            <span class="material-icons arrows"> arrow_forward_ios </span>
+          </div>
+          <div id="lAyC">
+            Launch or advance your career
+            <span class="material-icons arrows"> arrow_forward_ios </span>
+          </div>
+          <div>Subjects</div>
+          <div id="dS">
+            Data Science
+            <span class="material-icons arrows"> arrow_forward_ios </span>
+          </div>
+          <div id="business">
+            Business
+            <span class="material-icons arrows"> arrow_forward_ios </span>
+          </div>
+          <div id="cS">
+            Computer Science
+            <span class="material-icons arrows"> arrow_forward_ios </span>
+          </div>
+          <div id="iT">
+            Information Technology
+            <span class="material-icons arrows"> arrow_forward_ios </span>
+          </div>
+          <div id="lL">
+            Language Learning
+            <span class="material-icons arrows"> arrow_forward_ios </span>
+          </div>
+          <div id="health">
+            Health
+            <span class="material-icons arrows"> arrow_forward_ios </span>
+          </div>
+          <div id="pD">
+            Personal Development
+            <span class="material-icons arrows"> arrow_forward_ios </span>
+          </div>
+          <div id="pS">
+            Physical Sciences
+            <span class="material-icons arrows"> arrow_forward_ios </span>
+          </div>
+          <div id="sS">
+            Socail Sciences
+            <span class="material-icons arrows"> arrow_forward_ios </span>
+          </div>
+          <div id="aAh">
+            Art and Humanities
+            <span class="material-icons arrows"> arrow_forward_ios </span>
+          </div>
+          <div id="mAl">
+            Math and Logic
+            <span class="material-icons arrows"> arrow_forward_ios </span>
+          </div>
+          <div id="bAs">Browse all subjects</div>
+
+          <!-- hover menu end -->
+        </div>
+        <!-- <div id="infodiv">Information</div> -->
+        <div id="infodiv">
+          <p id="coursename">course</p>
+          <div id="threedivs">
+            <div>
+              <p class="firsttesxt">Degrees</p>
+              <hr />
+              <p class="secTex">
+                Breakthrough pricing on 100% online degrees<br />
+                designed to fit into your life.
+              </p>
+              <div id="degreediv"></div>
+              <div class="blueboxtex">View all degrees</div>
+            </div>
+            <div>
+              <p class="firsttesxt">Certificate programs</p>
+              <hr />
+              <p class="secTex">
+                In 3-9 months ,gain the skills to break into a new<br />
+                career or take your career to the next level.
+              </p>
+              <div id="certificatediv"></div>
+              <div class="blueboxtex">View all Certificates</div>
+            </div>
+            <div>
+              <p class="firsttesxt">Get Started</p>
+              <hr />
+              <div class="gets">Free courses</div>
+              <div class="gets">Most popular</div>
+              <div class="gets">Guided Projects under 2 hours</div>
+              <p class="firsttesxt popular">Popular Skills</p>
+              <hr />
+              <div id="popularskills"></div>
+            </div>
+          </div>
+        </div>
+        <!-- hovermenuandinfodiv End -->
+      </div>
+      <div id="debounce">
+        <p class="boldP">Recently viewed</p>
+        <div id="rV"></div>
+        <p class="boldP">Popular right now</p>
+        <div id="pRn">
           <div>
-              <a href="index.html"><img id="mainlogo" src="https://images.ctfassets.net/00atxywtfxvd/2MlqAOzmHjSPtssv6HlNox/1cb35b40775835a5f574ebc5509907a1/coursera-wordmark-blue.svg"></a></div>
-              <div id="explore">
-              <span id="extext1">Explore </span>
-              <span class="material-icons" id="arrow">
-              expand_more
-              </span>
+            <span class="material-icons pRnSi"> search </span>
+            <span class="lowerP">python</span>
           </div>
-          <div><input id="searchinput" placeholder="What do you want to learn?" type="text" oninput="fillPreviousSearched()">
-           <button class="material-icons" id="searchicon">
-          search
-          </button>
-  </div>
-  <div id="enterPrises"><a href="Enterprises.html" >For Enterprises</a></div>
-  <div id="forStu"><a href="student.html">For Students</a></div>
-  <div id="bellsign">
-      <img src="./images/bell.png" alt="">
-  </div>
-  <div id="verticalline"></div>
- <div id="hiddenfig"><img src="./images/dummy.png" alt="" "></div>
-  <div id="login"><a href="signin.html">Log In</a></div>
-  <div id="jff"><a href="signup.html" style="color: white;">Join for Free</a></div>
-  <!-- navbar end -->
+          <div>
+            <span class="material-icons pRnSi"> search </span>
+            <span class="lowerP">free</span>
           </div>
-  <!-- hover menu start -->
-  <div id="blockremover"></div> 
-  <div id="hovermenuandinfodiv">
-  <div id="hovermenu">
-      <div>Goals</div>
-      <div id="tAfC">Take a free course</div>
-      <div id="eAd">Earn a Degree
-      
-      <span class="material-icons arrows">
-          arrow_forward_ios
-          </span>
-      
-  </div>
-  <div id="eAc">Earn a Certificate
-      <span class="material-icons arrows">
-          arrow_forward_ios
-          </span>
-  </div>
-  <div id="lAyC">Launch or advance your career
-      <span class="material-icons arrows">
-          arrow_forward_ios
-          </span>
-  </div>
-  <div>Subjects</div>
-  <div id="dS">Data Science
-      <span class="material-icons arrows">
-          arrow_forward_ios
-          </span>
-  </div>
-  <div id="business">Business
-      <span class="material-icons arrows">
-          arrow_forward_ios
-          </span>
-  </div>
-  <div id="cS">Computer Science
-      <span class="material-icons arrows">
-          arrow_forward_ios
-          </span>
-  </div>
-  <div id="iT">Information Technology
-      <span class="material-icons arrows">
-          arrow_forward_ios
-          </span>
-  </div>
-  <div id="lL">Language Learning
-      <span class="material-icons arrows">
-          arrow_forward_ios
-          </span>
-  </div>
-  <div id="health">Health
-      <span class="material-icons arrows">
-          arrow_forward_ios
-          </span>
-  </div>
-  <div id="pD">Personal Development
-      <span class="material-icons arrows">
-          arrow_forward_ios
-          </span>
-  </div>
-  <div id="pS">Physical Sciences
-      <span class="material-icons arrows">
-          arrow_forward_ios
-          </span>
-  </div>
-  <div id="sS">Socail Sciences
-      <span class="material-icons arrows">
-          arrow_forward_ios
-          </span>
-  </div>
-  <div id="aAh">Art and Humanities
-      <span class="material-icons arrows">
-          arrow_forward_ios
-          </span>
-  </div>
-  <div id="mAl">Math and Logic
-      <span class="material-icons arrows">
-          arrow_forward_ios
-          </span>
-  </div>
-  <div id="bAs">Browse all subjects
-     
-  </div>
-
-  <!-- hover menu end -->
-</div> 
-<!-- <div id="infodiv">Information</div> -->
-<div id="infodiv">
-  <p id="coursename">course</p>
-  <div id="threedivs">
-      <div>
-          <p class="firsttesxt">Degrees</p>
-          <hr>
-          <p class="secTex">Breakthrough pricing on 100% online degrees<br>
-              designed to fit into your life.
-          </p>
-          <div id="degreediv"></div>
-          <div class="blueboxtex">View all degrees</div>
+          <div>
+            <span class="material-icons pRnSi"> search </span>
+            <span class="lowerP">sql</span>
+          </div>
+        </div>
       </div>
-      <div>
-          <p class="firsttesxt">Certificate programs</p>
-          <hr>
-          <p class="secTex">In 3-9 months ,gain the skills to break into a new<br>
-              career or take your career to the next level.
-          </p>
-          <div id="certificatediv"></div>
-          <div class="blueboxtex">View all Certificates</div>
-         
-      </div>
-      <div>
-          <p class="firsttesxt">Get Started</p>
-          <hr>
-          <div class="gets">Free courses</div>
-          <div class="gets">Most popular</div>
-          <div class="gets">Guided Projects under 2 hours</div>
-          <p class="firsttesxt popular">Popular Skills</p>
-          <hr>
-          <div id="popularskills"></div>
-      </div>
-  </div>
-</div>
-<!-- hovermenuandinfodiv End -->
-</div> 
-<div id="debounce">
-  <p class="boldP">Recently viewed</p>
-   <div id="rV">
-      
-      
-   </div>
-   <p class="boldP">Popular right now</p>
-   <div id="pRn">
-     <div>
-      <span class="material-icons pRnSi " >
-          search
-      </span>
-         <span class="lowerP">python</span>
-     
-  </div>
-  <div>
-      <span class="material-icons pRnSi " >
-          search
-      </span>
-         <span class="lowerP">free</span>
-     
-  </div>
-  <div>
-      <span class="material-icons pRnSi " >
-          search
-      </span>
-         <span class="lowerP">sql</span>
-     
-  </div>
-   </div>
-</div>
-<!-- container end -->
-  </div>
-    <!-- navbar end -->
-    <div>
-
+      <!-- container end -->
     </div>
+    <!-- navbar end -->
+    <div></div>
     <div class="banner">
       <span class="shareIcon"> </span>
-      
+
       <span class="sharetext">
-        <span><img src="./images/share icon.png" id="shareimg" style="vertical-align: bottom;"></span>
-Share
+        <span
+          ><img
+            src="./images/share icon.png"
+            id="shareimg"
+            style="vertical-align: bottom"
+        /></span>
+        Share
       </span>
-      
 
       <h2 class="boldclass">
         University and college students, learn job-ready skills for free with
@@ -259,45 +246,60 @@ Share
     <div class="logo_line">
       <div>
         <img
-        class="imga"
-        src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/front-page-story/partners/yale.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h=37"
-        alt="Yale University"
-      />
+          class="imga"
+          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/front-page-story/partners/yale.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h=37"
+          alt="Yale University"
+        />
       </div>
       <div>
-       <a href="google.html"> <img
-          class="imga"
-          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/teams_landing/partner_logos/google.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h=37"
-          alt="Google"
+        <a href="google.html">
+          <img
+            class="imga"
+            src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/teams_landing/partner_logos/google.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h=37"
+            alt="Google"
         /></a>
       </div>
       <div>
-        <img  class="imga" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/front-page-story/partners/UoL.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h=37"
-         alt="University of London">
-      </div>
-      <div>
-        <img  class="imga" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/coursera_plus/sas-logo.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h=32"  alt="SAS">
+        <img
+          class="imga"
+          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/front-page-story/partners/UoL.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h=37"
+          alt="University of London"
+        />
       </div>
       <div>
         <img
-        class="imga"
-        src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/teams_landing/partner_logos/duke.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h=37"
-        alt="Duke University"
-      />
+          class="imga"
+          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/coursera_plus/sas-logo.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h=32"
+          alt="SAS"
+        />
       </div>
       <div>
         <img
-            class="imga"
-            src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/teams_landing/partner_logos/ibm.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h=32"
-            alt="IBM"
-          />
+          class="imga"
+          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/teams_landing/partner_logos/duke.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h=37"
+          alt="Duke University"
+        />
       </div>
       <div>
-        <img  class="imga" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/front-page-story/partners/isb.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h=37"
-         alt="Indian School of Business">
+        <img
+          class="imga"
+          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/teams_landing/partner_logos/ibm.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h=32"
+          alt="IBM"
+        />
       </div>
       <div>
-        <img class="imga"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/front-page-story/partners/tecnologico-de-monterrey.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h=37"  alt="Tecnologico de Monterrey">
+        <img
+          class="imga"
+          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/front-page-story/partners/isb.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h=37"
+          alt="Indian School of Business"
+        />
+      </div>
+      <div>
+        <img
+          class="imga"
+          src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/front-page-story/partners/tecnologico-de-monterrey.png?auto=format%2Ccompress&amp;dpr=1&amp;w=&amp;h=37"
+          alt="Tecnologico de Monterrey"
+        />
       </div>
     </div>
     <!-- <div class="row">
@@ -476,64 +478,171 @@ Share
       *The Coursera Learner Outcomes Survey is sent to learners 6 months after
       they complete a course on Coursera.
     </p>
-<div class="bluebox">
-    <h2 class="faq">Frequently Asked Questions</h2>
-    <div class="c">
-        <button class="collapsible">What is the Coursera for Campus Student plan?</button>
+    <div class="bluebox">
+      <h2 class="faq">Frequently Asked Questions</h2>
+      <div class="c">
+        <button class="collapsible">
+          What is the Coursera for Campus Student plan?
+        </button>
         <div class="content">
-          <p class="textcontcollapsible">The Coursera for Campus Student plan allows individual university and college students to sign up for unlimited Guided Projects and one free course per year.</p>
-        </div></div>
-        <div class="c">
-        <button class="collapsible">How do I take more courses and Guided Projects? </button>
+          <p class="textcontcollapsible">
+            The Coursera for Campus Student plan allows individual university
+            and college students to sign up for unlimited Guided Projects and
+            one free course per year.
+          </p>
+        </div>
+      </div>
+      <div class="c">
+        <button class="collapsible">
+          How do I take more courses and Guided Projects?
+        </button>
         <div class="content">
-          <p class="textcontcollapsible">Your university will need to sign up for a Coursera for Campus Institution plan to provide you with access to more courses and Guided Projects. We suggest that you reach out to your university administration. You can still visit Coursera.org as a general learner and sign up to audit courses for free.</p>
-        </div></div>
+          <p class="textcontcollapsible">
+            Your university will need to sign up for a Coursera for Campus
+            Institution plan to provide you with access to more courses and
+            Guided Projects. We suggest that you reach out to your university
+            administration. You can still visit Coursera.org as a general
+            learner and sign up to audit courses for free.
+          </p>
+        </div>
+      </div>
 
-        <div class="c">
-        <button class="collapsible">If I’m a current student who signed up Initiative, what will happen to my account? </button>
+      <div class="c">
+        <button class="collapsible">
+          If I’m a current student who signed up Initiative, what will happen to
+          my account?
+        </button>
         <div class="content">
-          <p class="textcontcollapsible">Starting on October 1, 2020, and over the following week, your student account will migrate to a free Coursera for Campus Student plan account, which provides access to unlimited Guided Projects and one free course per year along with online support. You will have two months to finish any courses that you had enrolled in on or prior to September 30, 2020, after which you will be unenrolled from any courses you have not completed. If you are interested in getting full access to all courses, please reach out to your University administration.</p>
-        </div></div>
-        <div class="c">
-        <button class="collapsible">How do I know if I am eligible for the Coursera for Campus Student plan?  </button>
+          <p class="textcontcollapsible">
+            Starting on October 1, 2020, and over the following week, your
+            student account will migrate to a free Coursera for Campus Student
+            plan account, which provides access to unlimited Guided Projects and
+            one free course per year along with online support. You will have
+            two months to finish any courses that you had enrolled in on or
+            prior to September 30, 2020, after which you will be unenrolled from
+            any courses you have not completed. If you are interested in getting
+            full access to all courses, please reach out to your University
+            administration.
+          </p>
+        </div>
+      </div>
+      <div class="c">
+        <button class="collapsible">
+          How do I know if I am eligible for the Coursera for Campus Student
+          plan?
+        </button>
         <div class="content">
-          <p class="textcontcollapsible">The Coursera for Campus Student plan is available to full-time, part-time, community college, and university students. To verify eligibility, we are using a database of publicly available college and university email domains. To gain access, sign up with your university or college-issued email address. If your email domain is included on Coursera’s list of universities and colleges, you will be granted access to the Student plan. If not, please provide your school information so we can work to grant access to students at your school. Once we validate the information provided and launch a program we inform you by email. Due to the volume of students, this may take a few weeks. We appreciate your patience.</p>
-        </div></div>
-        <div class="c">
-        <button class="collapsible">What if I don’t have a university email address? </button>
+          <p class="textcontcollapsible">
+            The Coursera for Campus Student plan is available to full-time,
+            part-time, community college, and university students. To verify
+            eligibility, we are using a database of publicly available college
+            and university email domains. To gain access, sign up with your
+            university or college-issued email address. If your email domain is
+            included on Coursera’s list of universities and colleges, you will
+            be granted access to the Student plan. If not, please provide your
+            school information so we can work to grant access to students at
+            your school. Once we validate the information provided and launch a
+            program we inform you by email. Due to the volume of students, this
+            may take a few weeks. We appreciate your patience.
+          </p>
+        </div>
+      </div>
+      <div class="c">
+        <button class="collapsible">
+          What if I don’t have a university email address?
+        </button>
         <div class="content">
-          <p class="textcontcollapsible">Unfortunately, we are unable to verify email addresses from non-university domains such as Gmail, Hotmail, and Yahoo. If you do not have an email address with your university domain, please reach out to your university administration to get an email account issued. If we’re unable to recognize the university email domain that you’ve entered, you’ll be prompted to provide more information about your university. If we’re able to validate your status as a student with that information, you’ll receive an email notifying you of your eligibility. As you wait for your request to be processed, you can start learning with free courses for college students.</p>
-        </div></div>
-        <div class="c">
-        <button class="collapsible">I am a student with a university-issued email address but I’m not able to join the program. Why can’t I join? </button>
+          <p class="textcontcollapsible">
+            Unfortunately, we are unable to verify email addresses from
+            non-university domains such as Gmail, Hotmail, and Yahoo. If you do
+            not have an email address with your university domain, please reach
+            out to your university administration to get an email account
+            issued. If we’re unable to recognize the university email domain
+            that you’ve entered, you’ll be prompted to provide more information
+            about your university. If we’re able to validate your status as a
+            student with that information, you’ll receive an email notifying you
+            of your eligibility. As you wait for your request to be processed,
+            you can start learning with free courses for college students.
+          </p>
+        </div>
+      </div>
+      <div class="c">
+        <button class="collapsible">
+          I am a student with a university-issued email address but I’m not able
+          to join the program. Why can’t I join?
+        </button>
         <div class="content">
-          <p class="textcontcollapsible">You may not be able to join if we weren’t able to validate your university-issued email address with our database, or if you’re a student at a Coursera partner institution that needs to approve access. Please fill out the form when you’re prompted during the enrollment flow and you’ll receive an email if we’re able to confirm your eligibility for the program. In the meantime, you can start learning with free courses for college students.</p>
-        </div></div>
-        <div class="c">
-        <button class="collapsible">Is there a way to see if anything in Coursera’s catalog matches the courses that my university offers?</button>
+          <p class="textcontcollapsible">
+            You may not be able to join if we weren’t able to validate your
+            university-issued email address with our database, or if you’re a
+            student at a Coursera partner institution that needs to approve
+            access. Please fill out the form when you’re prompted during the
+            enrollment flow and you’ll receive an email if we’re able to confirm
+            your eligibility for the program. In the meantime, you can start
+            learning with free courses for college students.
+          </p>
+        </div>
+      </div>
+      <div class="c">
+        <button class="collapsible">
+          Is there a way to see if anything in Coursera’s catalog matches the
+          courses that my university offers?
+        </button>
         <div class="content">
-          <p class="textcontcollapsible">Yes! Coursera recently launched CourseMatch. This machine learning tool automatically matches your college or university catalog to the most relevant courses on Coursera.</p>
-        </div></div>
-        <div class="c">
-        <button class="collapsible">Will my college or university have access to what I learn on Coursera?</button>
+          <p class="textcontcollapsible">
+            Yes! Coursera recently launched CourseMatch. This machine learning
+            tool automatically matches your college or university catalog to the
+            most relevant courses on Coursera.
+          </p>
+        </div>
+      </div>
+      <div class="c">
+        <button class="collapsible">
+          Will my college or university have access to what I learn on Coursera?
+        </button>
         <div class="content">
-          <p class="textcontcollapsible">After you enroll in the Coursera for Campus Student plan, your college or university may receive anonymized information about what you’re learning if university leaders are considering bringing Coursera to your institution through Coursera for Campus. If your college or university decides to participate in Coursera for Campus, your learning information from Coursera for Campus Student plan will be visible to the administrators from your college or university that are managing the Coursera for Campus program.</p>
-        </div></div>
-        
-        <div class="c">
-        <button class="collapsible">Are there any international restrictions?</button>
+          <p class="textcontcollapsible">
+            After you enroll in the Coursera for Campus Student plan, your
+            college or university may receive anonymized information about what
+            you’re learning if university leaders are considering bringing
+            Coursera to your institution through Coursera for Campus. If your
+            college or university decides to participate in Coursera for Campus,
+            your learning information from Coursera for Campus Student plan will
+            be visible to the administrators from your college or university
+            that are managing the Coursera for Campus program.
+          </p>
+        </div>
+      </div>
+
+      <div class="c">
+        <button class="collapsible">
+          Are there any international restrictions?
+        </button>
         <div class="content">
-          <p class="textcontcollapsible">This offering is available to students around the world. We value our global community immensely and we deeply regret the need to withhold services from anyone in certain sanctioned regions in order to remain in compliance with U.S. law. Our team is continually exploring options to expand access and we hope one day to offer unrestricted access throughout the world. For more information, please go here.</p>
-        </div></div>
-        
-        
-        
-        <div class="c">
-        <button class="collapsible">Where do I go for customer support questions? </button>
+          <p class="textcontcollapsible">
+            This offering is available to students around the world. We value
+            our global community immensely and we deeply regret the need to
+            withhold services from anyone in certain sanctioned regions in order
+            to remain in compliance with U.S. law. Our team is continually
+            exploring options to expand access and we hope one day to offer
+            unrestricted access throughout the world. For more information,
+            please go here.
+          </p>
+        </div>
+      </div>
+
+      <div class="c">
+        <button class="collapsible">
+          Where do I go for customer support questions?
+        </button>
         <div class="content">
-          <p class="textcontcollapsible"> We are pleased to offer online help centers for students using the Coursera for Campus Student plan here. </p>
-        </div></div>
-</div>
+          <p class="textcontcollapsible">
+            We are pleased to offer online help centers for students using the
+            Coursera for Campus Student plan here.
+          </p>
+        </div>
+      </div>
+    </div>
     <div class="footer">
       <div class="career">
         <h3 class="h33">
@@ -730,39 +839,39 @@ Share
 </html>
 
 <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-    
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
-         // content.style.display = 'block';
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+        // content.style.display = 'block';
         // content.style.display = 'none';
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
         //  content.style.display = 'block';
-        } 
-      });
-    }
-    if(localStorage.getItem("logindata")!=null){
-    var logindata=JSON.parse( localStorage.getItem("logindata"));
-    console.log((logindata[0].name));
-    var jff=document.getElementById("jff");
-    jff.innerHTML=logindata[0].name;
-    jff.style.color="black";
-    jff.style.backgroundColor="white"
-// hid;
-var login=document.getElementById("login");
-login.style.display="none";
-var bellsign=document.getElementById("bellsign");
-bellsign.style.display="block";
-var hiddenfig=document.getElementById("hiddenfig");
-hiddenfig.style.display="block";
-var verticalline=document.getElementById("verticalline");
-verticalline.style.display="block";
-}
-    </script>
+      }
+    });
+  }
+  if (localStorage.getItem("logindata") != null) {
+    var logindata = JSON.parse(localStorage.getItem("logindata"));
+    console.log(logindata[0].name);
+    var jff = document.getElementById("jff");
+    jff.innerHTML = logindata[0].name;
+    jff.style.color = "black";
+    jff.style.backgroundColor = "white";
+    // hid;
+    var login = document.getElementById("login");
+    login.style.display = "none";
+    var bellsign = document.getElementById("bellsign");
+    bellsign.style.display = "block";
+    var hiddenfig = document.getElementById("hiddenfig");
+    hiddenfig.style.display = "block";
+    var verticalline = document.getElementById("verticalline");
+    verticalline.style.display = "block";
+  }
+</script>
 <!-- <script src="./scripts/index.js"></script> -->
