@@ -1,6 +1,15 @@
 # Clone of Coursera.org 
-## Deployed Link-> https://clone-of-coursera.netlify.app/
+## Deployed Link -> https://clone-of-coursera.netlify.app/
 ### [for Learning Purpose]
+### Main Repo -> https://github.com/DharmeshRS/Coursera_Clone
+
+## Contributors :
+* [Dharmesh Sonar](https://github.com/DharmeshRS)
+* [Anmol Kumar](https://github.com/Anmolroan)
+* [Vishwaraj Patil](https://github.com/PatilVishwaraj)
+* [Surendra Yadav](https://github.com/Surendra9129)
+* [aishwarya Jadhav](https://github.com/aishwaryaj20)
+* [Abhishek Silawat](https://github.com/abhishek-0607)
 
 ## Technologies Used :
 <img src="https://p92.com/binaries/content/gallery/p92website/technologies/htmlcssjs-details.png"  title="hover text" height="100px">
@@ -21,8 +30,6 @@
 #### fetch API
 #### JSON Mock Server
 
-
-
 ## Getting Started :
 
 
@@ -35,18 +42,6 @@
     ``` 
     https://github.com/DharmeshRS/Coursera_Clone.git
     ```
-
-### Website Flow
-
-
-## Contributors :
-* [Dharmesh Sonar](https://github.com/DharmeshRS)
-* [Anmol Kumar](https://github.com/Anmolroan)
-* [Vishwaraj Patil](https://github.com/PatilVishwaraj)
-* [Surendra Yadav](https://github.com/Surendra9129)
-* [aishwarya Jadhav](https://github.com/aishwaryaj20)
-* [Abhishek Silawat](https://github.com/abhishek-0607)
-
 
 ## Some Screeshots of our Project :-
 
