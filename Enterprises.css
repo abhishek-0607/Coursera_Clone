@@ -1,3 +1,5 @@
+
+
 #promo-bar{
     background-color: #f2d049;
     width: 100%;
@@ -504,7 +506,7 @@
    margin-bottom: 10px;
    margin-right: 100px;
    
-} */
+}
 
 label::after{
     content: "*";
