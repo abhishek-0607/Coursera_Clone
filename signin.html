@@ -57,6 +57,7 @@
     allUsers.forEach(function (user) {
       if (email === user.email && password === user.password) {
         alert("logged in succesfully");
+        localStorage.setItem("login", JSON.stringify(user));
         window.location.href = "index.html";
       }
     });
