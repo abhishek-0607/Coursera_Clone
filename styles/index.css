@@ -95,6 +95,7 @@ textarea {
   text-decoration: underline;
   color: #0056d2;
 }
+
 #login {
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 13px;
@@ -106,17 +107,60 @@ textarea {
 #login:hover {
   text-decoration: underline;
 }
+
+#bellsign {
+  display: none;
+  /* border: 1px solid green; */
+  height: 60px;
+  margin-left: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px;
+}
+#bellsign > img {
+  width: 25px;
+}
+#hiddenfig {
+  /* border: 1px solid green; */
+  align-items: center;
+  justify-content: center;
+  display: none;
+  padding: 0px 12px;
+}
+#hiddenfig > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+#verticalline {
+  width: 3px;
+  background-color: rgb(184, 180, 180);
+  height: 40px;
+  margin-left: 0px;
+  display: none;
+}
 #jff {
-  font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 14px;
-  color: #000000;
-  /* border: solid; */
   margin-left: 35px;
   background-color: #0056d2;
   height: 20px;
   padding: 10px 18px;
   border-radius: 2px;
   color: white;
+  display: block;
+}
+
+#logout {
+  font-size: 14px;
+  margin-left: 35px;
+  background-color: #0056d2;
+  height: 20px;
+  padding: 10px 18px;
+  border-radius: 2px;
+  font-size: 14px;
+  background-color: #0056d2;
+  color: white;
+  display: none;
 }
 #blockremover {
   padding: 29px;
@@ -377,33 +421,3 @@ hr {
   /* margin-left: 8px; */
 }
 /* putting name and dummy image */
-#bellsign {
-  display: none;
-}
-#bellsign > img {
-  width: 29px;
-
-  margin-left: 10px;
-  margin-top: 17px;
-  margin-right: 15px;
-}
-#hiddenfig {
-  width: 50px;
-
-  margin-left: 3px;
-  display: none;
-}
-#hiddenfig > img {
-  margin-top: 10px;
-  width: 100%;
-  margin-left: 10px;
-  border-radius: 50%;
-}
-#verticalline {
-  width: 3px;
-  background-color: rgb(184, 180, 180);
-  height: 40px;
-  margin-right: 10px;
-  margin-top: 15px;
-  display: none;
-}

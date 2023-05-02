@@ -1,128 +1,124 @@
-/* @media images changes into 3 rows {
-    grid
-} */
-@media screen and (max-width: 1460px) {
-  * {
-    font-family: "Source Sans Pro", Arial, sans-serif;
-  }
-  #container {
-    width: 100%;
-    height: 60px;
-    /* border: 2px solid green; */
-    position: fixed;
-    background-color: white;
-    left: 0px;
-    top: 0px;
-    z-index: 1;
-  }
-  #navbar {
-    width: 100%;
-    /* border: solid rgb(177, 37, 37) 2px; */
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  #logo {
-    /* border: solid green 2px; */
-    height: 60px;
-  }
-  #mainlogo {
-    display: block;
-    width: 100px;
-    /* border: solid; */
-  }
+* {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+}
+#container {
+  width: 100%;
+  height: 60px;
+  /* border: 2px solid green; */
+  position: fixed;
+  background-color: white;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+#navbar {
+  width: 100%;
+  /* border: solid rgb(177, 37, 37) 2px; */
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#logo {
+  /* border: solid green 2px; */
+  height: 60px;
+}
+#mainlogo {
+  display: block;
+  width: 100px;
+  /* border: solid; */
+}
 
-  #explore {
-    border-radius: 3px;
-    background-color: #0056d2;
-    color: white;
-    padding: 0px 10px;
-    margin-bottom: 10px;
-  }
-  #extext1 {
-    font-size: 14px;
-    font-weight: 550;
-  }
-  #arrow {
-    font-weight: 600;
-    text-align: center;
-    font-size: 17px;
-  }
-  #searchBox {
-    /* border: 2px solid green; */
-    margin-top: 5px;
-    margin-left: 35px;
-    width: 380px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #searchinput {
-    font-weight: 300px;
-    color: #373a3c;
-  }
-  #searchicon {
-    background-color: #0056d2;
-    height: 42px;
-    margin-right: 20px;
-    color: white;
-    /* border: solid green 2px; */
-    border-radius: 3px;
-    border: none;
-  }
-  input:focus,
-  textarea {
-    outline: none !important;
-  }
-  /* #menu {
+#explore {
+  border-radius: 3px;
+  background-color: #0056d2;
+  color: white;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+}
+#extext1 {
+  font-size: 14px;
+  font-weight: 550;
+}
+#arrow {
+  font-weight: 600;
+  text-align: center;
+  font-size: 17px;
+}
+#searchBox {
+  /* border: 2px solid green; */
+  margin-top: 5px;
+  margin-left: 35px;
+  width: 380px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#searchinput {
+  font-weight: 300px;
+  color: #373a3c;
+}
+#searchicon {
+  background-color: #0056d2;
+  height: 42px;
+  margin-right: 20px;
+  color: white;
+  /* border: solid green 2px; */
+  border-radius: 3px;
+  border: none;
+}
+input:focus,
+textarea {
+  outline: none !important;
+}
+/* #menu {
     display: flex;
     border: solid green 2px;
     padding-bottom: 10px;
   } */
-  #enterPrises {
-    font-size: 13px;
-    color: #373a3c;
-  }
+#enterPrises {
+  font-size: 13px;
+  color: #373a3c;
+}
 
-  #enterPrises:hover {
-    text-decoration: underline;
-    color: #0056d2;
-  }
-  #forStu {
-    font-size: 13px;
-    color: #000000;
-  }
-  #forStu:hover {
-    text-decoration: underline;
-    color: #0056d2;
-  }
-  #login {
-    font-size: 13px;
-    color: #0056d2;
-  }
-  #login:hover {
-    text-decoration: underline;
-  }
-  #jff {
-    font-size: 14px;
-    color: #000000;
-    background-color: #0056d2;
-    border-radius: 2px;
-    color: white;
-  }
-  #blockremover {
-    padding: 29px;
-  }
-  .course_data > div {
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 10px;
-    box-shadow: 2px 2px 5px solid gray;
-  }
+#enterPrises:hover {
+  text-decoration: underline;
+  color: #0056d2;
+}
+#forStu {
+  font-size: 13px;
+  color: #000000;
+}
+#forStu:hover {
+  text-decoration: underline;
+  color: #0056d2;
+}
+#login {
+  font-size: 13px;
+  color: #0056d2;
+}
+#login:hover {
+  text-decoration: underline;
+}
+
+#jff {
+  font-size: 14px;
+  color: #000000;
+  background-color: #0056d2;
+  border-radius: 2px;
+  color: white;
+}
+#blockremover {
+  padding: 29px;
+}
+.course_data > div {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  box-shadow: 2px 2px 5px solid gray;
 }
 
 /* homepage first poster */
