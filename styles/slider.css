@@ -30,13 +30,6 @@
   /* border: solid; */
 }
 
-#explore {
-  border-radius: 3px;
-  background-color: #0056d2;
-  color: white;
-  padding: 0px 10px;
-  margin-bottom: 10px;
-}
 #extext1 {
   font-size: 14px;
   font-weight: 550;
@@ -319,9 +312,6 @@ section::-webkit-scrollbar {
   margin-top: 20px;
 }
 
-/* .explore1{
-    margin-top: -100px;
-} */
 .footer_div {
   margin-top: 100px;
   width: 93%;
